@@ -27,9 +27,9 @@ def main():
   text_part = MIMEText(request)
   msg['Subject'] = '[VPN] Manage users'
   msg['From'] = LOGIN_MAIL
-  msg['To'] = 'vpn@powerofgeeks.com'
+  msg['To'] = 'vpn@example.com'
   msg.attach(text_part)
-  server.sendmail(LOGIN_MAIL, 'vpn@powerofgeeks.com', msg.as_string())
+  server.sendmail(LOGIN_MAIL, 'vpn@example.com', msg.as_string())
   server.quit()
 
 
